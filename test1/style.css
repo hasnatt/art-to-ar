@@ -6,7 +6,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+
 }
 
 .image-container{
@@ -15,4 +15,13 @@ body{
     width: 100%;
     max-width: 100%;
     position: relative;
+}
+
+.canvas{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+
 }
