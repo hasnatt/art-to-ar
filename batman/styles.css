@@ -1,0 +1,95 @@
+html,
+body {
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+.image-container {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+    -webkit-perspective: 1500px;
+    perspective: 1500px;
+    /*transform-style: preserve-3d;*/
+    align-items: center;
+    justify-contents: center;
+}
+
+.canvas {
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+.loading-screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: white;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	visibility: visible;
+	opacity: 1;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 40px;
+	transition: 0.25s ease all 0.75s;
+	color: #999;
+	transform: translateZ(50px);
+}
+.loading-screen.hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+.allow-motion-button {
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 20px;
+	width: 225px;
+	height: 50px;
+	border-radius: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: white;
+	box-shadow: 0 0 30px rgba(0,0,0,0.15);
+	overflow: hidden;
+	padding: 0 5px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	transition: 0.15s ease all;
+	font-family: sans-serif;
+}
+.allow-motion-button.visible {
+	visibility: visible;
+	opacity: 1;
+}
+.allow-motion-icon {
+	height: 40px;
+	width: 40px;
+	background-image: url('./images/gyroscope.png');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.allow-motion-text {
+	color: #1FAD70;
+	padding-left: 5px;
+}
