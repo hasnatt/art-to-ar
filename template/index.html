@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Art to AR Template</title>
+      <link rel="stylesheet" type="text/css" href="./styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   </head>
+   <body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed="">
+      <div class="image-container">
+         <!-- Insert the dimensions of your art work in canvas -->
+         <canvas class="canvas" width="900" height="1200" id="canvas" style="transform: rotateX(0deg) rotateY(0deg);"></canvas>
+      </div>
+      <div class="loading-screen hidden" id="loading">Loading...</div>
+      <div class="allow-motion-button" onclick="enableMotion()">
+         <div class="allow-motion-icon"></div>
+         <div class="allow-motion-text">Enable Motion Controls</div>
+         <div>
+            <script type="text/javascript" src="./tween.js"></script>
+            <script type="text/javascript" src="./main.js"></script>
+         </div>
+      </div>
+   </body>
+</html>
