@@ -20,8 +20,8 @@ var batsign = new Image();
 var layer_list = [
 	{
 		'image': background,
-		'src': './images/layer_1_1.png',
-		'z_index': -2.25,
+		'src': './images/layer_1.png',
+		'z_index': -1.55,
 		'position': {x: 0, y: 0},
 		'blend': null,
 		'opacity': 1
@@ -29,7 +29,7 @@ var layer_list = [
 
 	{
 		'image': floaties_1,
-		'src': './images/layer_3_1.png',
+		'src': './images/layer_3.png',
 		'z_index': -1.25,
 		'position': {x: 0, y: 0},
 		'blend': 'overlay',
@@ -37,7 +37,7 @@ var layer_list = [
 	},
 	{
 		'image': floaties_2,
-		'src': './images/layer_4_1.png',
+		'src': './images/layer_4.png',
 		'z_index': -0.5,
 		'position': {x: 0, y: 0},
 		'blend': 'overlay',
@@ -53,7 +53,7 @@ var layer_list = [
 	},
 	{
 		'image': wings,
-		'src': './images/layer_6_1.png',
+		'src': './images/layer_6.png',
 		'z_index': -0.5,
 		'position': {x: 0, y: 0},
 		'blend': null,
@@ -70,7 +70,7 @@ var layer_list = [
 	},
 	{
 		'image': batman,
-		'src': './images/layer_7_1.png',
+		'src': './images/layer_7.png',
 		'z_index': 1,
 		'position': {x: 0, y: 0},
 		'blend': null,
@@ -78,7 +78,7 @@ var layer_list = [
 	},
 	{
 		'image': batsign,
-		'src': './images/layer_8_1.png',
+		'src': './images/layer_8.png',
 		'z_index': 1.1,
 		'position': {x: 0, y: 0},
 		'blend': null,
